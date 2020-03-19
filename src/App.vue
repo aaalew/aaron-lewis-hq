@@ -1,32 +1,114 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="page">
+      <div id="side-menu">
+        <div id="scroll-spacer">
+          <i class="fas fa-angle-up fa-3x"></i>
+        </div>
+        <div class="menu-column">
+          <router-link to="/" class="menu-item">
+            <p>Home</p>
+          </router-link>
+          <router-link to="/about" class="menu-item">
+            <p>About</p>
+          </router-link>
+          <router-link to="/about" class="menu-item">
+            <p>Quotes</p>
+          </router-link>
+          <router-link to="/about" class="menu-item">
+            <p>Contact</p>
+          </router-link>
+          <router-link to="/about" class="menu-item">
+            <p>Links</p>
+          </router-link>
+        </div>
+      </div>
+      <div id="content">
+        <router-view/>
+      </div>
+      <div id="none"></div>
     </div>
-    <router-view/>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#nav {
-  padding: 30px;
+#page {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif, "Arial", monospace;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-areas: "side-menu content none";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #111111;
 }
 
-#nav a {
+#side-menu {
+  grid-area: side-menu;
+  overflow: auto;
+  background-color: #aaaaaa;
+}
+
+#scroll-spacer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#side-menu .menu-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#side-menu .menu-item {
+  display: flex;
+  height: 20%;
+  align-items: center;
+  margin-left: 50px;
+  font-size: 20px;
   font-weight: bold;
-  color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+#content {
+  grid-area: content;
+  display: flex;
+  background-color: #999999;
 }
+
+a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+a:active {
+  color: #555555;
+  text-decoration: none;
+}
+
+a:visited:hover {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+a:visited:active {
+  color: #555555;
+  text-decoration: none;
+}
+
 </style>
