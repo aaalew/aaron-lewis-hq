@@ -54,7 +54,9 @@
 #side-menu {
   grid-area: side-menu;
   overflow: auto;
-  background-color: #aaaaaa;
+}
+#side-menu::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 #scroll-spacer {
@@ -82,7 +84,6 @@
 #content {
   grid-area: content;
   display: flex;
-  background-color: #999999;
 }
 
 a:link,
@@ -92,7 +93,7 @@ a:visited {
 }
 
 a:hover {
-  color: #aaaaaa;
+  color: #4fa7f5;
   text-decoration: none;
 }
 
@@ -102,7 +103,7 @@ a:active {
 }
 
 a:visited:hover {
-  color: #aaaaaa;
+  color: #4fa7f5;
   text-decoration: none;
 }
 
