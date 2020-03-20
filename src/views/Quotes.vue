@@ -4,7 +4,7 @@
     <div id="quotes-container">
         <div class="quote-box" v-for="quote in quotes" :key="quote.id">
           <div class="quote">{{quote.quote}}</div>
-          <div class="author">--{{quote.author}}</div>
+          <div class="author">--{{quote.author}}--</div>
         </div>
     </div>
     <div style="height: 33%;"></div>
@@ -34,10 +34,6 @@ export default {
 
 <style scoped>
 
-#quotes::-webkit-scrollbar {
-  width: 0 !important;
-}
-
 #quote-container {
   display: flex;
   justify-content: center;
@@ -45,18 +41,36 @@ export default {
 
 .quote-box {
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .quote-box:hover {
   background-color: #7750FA;
-  font-weight: bold;
-  margin: 40px 10px;
 }
 
-.quote {
-  display: flex;
+.quote,
+.author {
   width: 75%;
+  border-left: 4px #7750FA solid;
+  padding-left: 10px;
+}
+
+.author {
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .quote,
+  .author {
+    width: 100%;
+    border-left: 4px #7750FA solid;
+    padding-left: 10px;
+  }
+
+  .author {
+    padding-left: 30px;
+  }
 }
 
 </style>

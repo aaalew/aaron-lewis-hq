@@ -29,12 +29,13 @@ export default {
 }
 
 #links-title {
-  font-size: 28px;
+  font-size: 2vw;
   font-weight: bold;
   margin: 30px 0px;
 }
 
 .link {
+  border-left: 4px #7750FA solid;
 }
 
 .link:link,
@@ -46,7 +47,7 @@ export default {
   align-items: center;
   height: 100px;
   padding-left: 20px;
-   margin: 10px 0;
+  margin: 30px 0;
 }
 
 .link:hover,
@@ -54,6 +55,30 @@ export default {
   padding-left: 50px;
   color: #FFF;
   background-color: #7750FA;
+}
+
+@media only screen and (max-width: 400px) {
+
+  #links-title {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .link {
+    border-left: 4px #7750FA solid;
+    border-right: 4px #7750FA solid;
+  }
+
+  .link:link,
+  .link:visited {
+    justify-content: center;
+    margin: 30px 20px;
+    padding-left: 0;
+  }
+
+  a {
+    text-align: center;
+  }
 }
 
 </style>

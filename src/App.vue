@@ -55,7 +55,8 @@
   grid-area: side-menu;
   overflow: auto;
 }
-#side-menu::-webkit-scrollbar {
+#side-menu::-webkit-scrollbar,
+#content::-webkit-scrollbar {
   width: 0 !important;
 }
 
@@ -78,7 +79,6 @@
   align-items: center;
   margin-left: 50px;
   font-size: 20px;
-  font-weight: bold;
 }
 
 #content {
@@ -111,6 +111,26 @@ a:visited:hover {
 a:visited:active {
   color: #555555;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+
+  #page {
+    grid-template-columns: 2fr 15fr 2fr;
+    font-size: 16px;
+  }
+
+  #side-menu {
+    overflow-x: hidden;
+  }
+
+  #side-menu .menu-item {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100;
+    margin-left: 0px;
+    justify-content: center;
+  }
 }
 
 </style>

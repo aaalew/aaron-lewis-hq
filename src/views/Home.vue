@@ -29,4 +29,10 @@ export default {
   font-family: 'Caveat', cursive;
 }
 
+@media only screen and (max-width: 400px) {
+  #title-name {
+    font-size: 60px;
+  }
+}
+
 </style>

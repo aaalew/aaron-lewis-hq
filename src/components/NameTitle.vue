@@ -24,4 +24,11 @@ export default {
   text-align: center;
 }
 
+@media only screen and (max-width: 400px) {
+  #title-name{
+    font-size: 10vw;
+    height: 10%;
+  }
+}
+
 </style>

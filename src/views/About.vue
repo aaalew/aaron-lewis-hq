@@ -78,10 +78,6 @@ export default {
   position: relative;
 }
 
-#about::-webkit-scrollbar {
-  width: 0 !important;
-}
-
 #resume {
 }
 
@@ -141,6 +137,12 @@ ul.resume-list {
 
 li.no-bullet {
   list-style-type: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .pic-and-bio {
+    flex-direction: column;
+  }
 }
 
 </style>
