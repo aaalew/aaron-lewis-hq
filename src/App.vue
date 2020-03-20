@@ -12,13 +12,13 @@
           <router-link to="/about" class="menu-item">
             <p>About</p>
           </router-link>
-          <router-link to="/about" class="menu-item">
+          <router-link to="/quotes" class="menu-item">
             <p>Quotes</p>
           </router-link>
-          <router-link to="/about" class="menu-item">
+          <router-link to="/contact" class="menu-item">
             <p>Contact</p>
           </router-link>
-          <router-link to="/about" class="menu-item">
+          <router-link to="/links" class="menu-item">
             <p>Links</p>
           </router-link>
         </div>
@@ -84,6 +84,7 @@
 #content {
   grid-area: content;
   display: flex;
+  overflow: auto;
 }
 
 a:link,

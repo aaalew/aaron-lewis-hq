@@ -1,0 +1,59 @@
+<template>
+<div id="links">
+    <NameTitle/>
+    <div id="links-title">Partake of my links:</div>
+    <a class="link" href="http://nbatrends.aaronlewishq.com/" target="_blank">NBA Trends</a>
+    <a class="link" href="http://lab1.aaronlewishq.com/" target="_blank">CS 260 - Lab 1 (Clarity)</a>
+    <a class="link" href="http://lab2.aaronlewishq.com/" target="_blank">CS 260 - Lab 2 (Bee Boop Weather)</a>
+    <a class="link" href="http://lab3a.aaronlewishq.com/" target="_blank">CS 260 - Lab 3a (Comics)</a>
+    <a class="link" href="http://lab3b.aaronlewishq.com/" target="_blank">CS 260 - Lab 3b (Grocery Store)</a>
+</div>
+</template>
+
+<script>
+// @ is an alias to /src
+import NameTitle from '@/components/NameTitle.vue'
+
+export default {
+  name: 'Links',
+  components: {
+    NameTitle
+  }
+}
+</script>
+
+<style scoped>
+
+#links {
+    width: 100%;
+}
+
+#links-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+
+.link {
+}
+
+.link:link,
+.link:visited {
+  display: flex;
+  text-decoration: none;
+  background-color: #111111;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.link:hover,
+.link:visited:hover {
+    padding-left: 50px;
+  color: #FFF;
+  background-color: #7750FA;
+}
+
+</style>
