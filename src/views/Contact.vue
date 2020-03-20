@@ -4,7 +4,7 @@
     <div class="links-grid">
         <div class="links-row">
         <div class="links-column">
-            <a class="button" target="_blank" href="https://github.com/aaalew">GitHub</a>
+            <a class="button" target="_blank" href="https://github.com/aaalew/">GitHub</a>
             <a class="button" target="_blank" href="https://www.linkedin.com/in/aaron-lewis-1aab62114/">LinkedIn</a>
         </div>
         <div class="links-column">

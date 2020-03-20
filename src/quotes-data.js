@@ -1,4 +1,4 @@
-let quotes = 
+let quotesData = 
 [{
     id: 1,
     quote: "There is a basin in the mind where words float around on thought and thought on sound and sight. Then there is a depth of thought untouched by words, and deeper still a gulf of formless feelings untouched by thought.",
@@ -100,4 +100,4 @@ let quotes =
     author: "Carlyle"
 }]
 
-export default quotes;
+export default quotesData;

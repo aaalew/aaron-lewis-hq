@@ -25,13 +25,13 @@ export default {
 <style scoped>
 
 #links {
-    width: 100%;
+  width: 100%;
 }
 
 #links-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 30px 0px;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 30px 0px;
 }
 
 .link {
@@ -42,16 +42,16 @@ export default {
   display: flex;
   text-decoration: none;
   background-color: #111111;
-    display: flex;
-    align-items: center;
-    height: 100px;
-    padding-left: 20px;
-    margin: 10px 0;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding-left: 20px;
+   margin: 10px 0;
 }
 
 .link:hover,
 .link:visited:hover {
-    padding-left: 50px;
+  padding-left: 50px;
   color: #FFF;
   background-color: #7750FA;
 }

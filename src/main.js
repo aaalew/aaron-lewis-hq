@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import quotes from './quotes-data.js'
-
-Vue.config.productionTip = false
+import quotesData from './quotes-data.js'
 
 let data = {
-  quotes
+  quotes: quotesData
 }
 
 new Vue({

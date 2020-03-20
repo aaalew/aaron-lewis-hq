@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    <div id="title-name">Aaron Lewis</div>
+    <router-link to="/" id="title-name">
+      <p>Aaron Lewis</p>
+    </router-link>
   </div>
 </template>
 
