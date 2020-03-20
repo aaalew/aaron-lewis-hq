@@ -3,9 +3,9 @@
     <div id="page">
       <div id="side-menu">
         <div id="scroll-spacer">
-          <i class="fas fa-angle-up fa-3x"></i>
+          <a href="#menu-column"><i class="fas fa-angle-up fa-3x"></i></a>
         </div>
-        <div class="menu-column">
+        <div id="menu-column">
           <router-link to="/" class="menu-item">
             <p>Home</p>
           </router-link>
@@ -31,6 +31,34 @@
   </div>
 </template>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
 <style>
 * {
   margin: 0;
@@ -54,6 +82,7 @@
 #side-menu {
   grid-area: side-menu;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 #side-menu::-webkit-scrollbar,
 #content::-webkit-scrollbar {
@@ -67,7 +96,7 @@
   align-items: flex-end;
 }
 
-#side-menu .menu-column {
+#side-menu #menu-column {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -94,7 +123,7 @@ a:visited {
 }
 
 a:hover {
-  color: #4fa7f5;
+  color: #7750FA;
   text-decoration: none;
 }
 
@@ -104,7 +133,7 @@ a:active {
 }
 
 a:visited:hover {
-  color: #4fa7f5;
+  color: #7750FA;
   text-decoration: none;
 }
 
