@@ -7,6 +7,7 @@
     <a class="link" href="https://lab2.aaronlewishq.com/" target="_blank">CS 260 - Lab 2 (Bee Boop Weather)</a>
     <a class="link" href="https://lab3a.aaronlewishq.com/" target="_blank">CS 260 - Lab 3a (Comics)</a>
     <a class="link" href="https://lab3b.aaronlewishq.com/" target="_blank">CS 260 - Lab 3b (Grocery Store)</a>
+    <a class="link" href="https://lab4.aaronlewishq.com/" target="_blank">CS 260 - Lab 4 (Photo Museum)</a>
 </div>
 </template>
 
