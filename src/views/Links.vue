@@ -2,11 +2,11 @@
 <div id="links">
     <NameTitle/>
     <div id="links-title">Partake of my links:</div>
-    <a class="link" href="http://nbatrends.aaronlewishq.com/" target="_blank">NBA Trends</a>
-    <a class="link" href="http://lab1.aaronlewishq.com/" target="_blank">CS 260 - Lab 1 (Clarity)</a>
-    <a class="link" href="http://lab2.aaronlewishq.com/" target="_blank">CS 260 - Lab 2 (Bee Boop Weather)</a>
-    <a class="link" href="http://lab3a.aaronlewishq.com/" target="_blank">CS 260 - Lab 3a (Comics)</a>
-    <a class="link" href="http://lab3b.aaronlewishq.com/" target="_blank">CS 260 - Lab 3b (Grocery Store)</a>
+    <a class="link" href="https://nbatrends.aaronlewishq.com/" target="_blank">NBA Trends</a>
+    <a class="link" href="https://lab1.aaronlewishq.com/" target="_blank">CS 260 - Lab 1 (Clarity)</a>
+    <a class="link" href="https://lab2.aaronlewishq.com/" target="_blank">CS 260 - Lab 2 (Bee Boop Weather)</a>
+    <a class="link" href="https://lab3a.aaronlewishq.com/" target="_blank">CS 260 - Lab 3a (Comics)</a>
+    <a class="link" href="https://lab3b.aaronlewishq.com/" target="_blank">CS 260 - Lab 3b (Grocery Store)</a>
 </div>
 </template>
 
